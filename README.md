@@ -79,7 +79,7 @@ This example demonstrates how to convert a BERT model to MLIR (Multi-Level Inter
 
 5. **Export to MLIR**:
     - Use `fx.export_and_import` to export the model to MLIR format with the specified output type (`linalg-on-tensors`) and function name.
-    - There are many Other dialects that are supported like `torch`, `tosa`, `stablehlo`, `raw`
+    - There are many other dialects that are supported like `torch`, `tosa`, `stablehlo`, `raw`
 
 6. **Save the exported MLIR module to a file**:
     - Write the MLIR representation to a file named `bert_linalg.mlir` using `redirect_stdout` to capture the output of `module.operation.get_asm()`.
