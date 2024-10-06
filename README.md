@@ -16,7 +16,12 @@ This project was developed in during my summer internship at the NYUAD Universit
     ```bash
     pip install -r requirements.txt
     ```
-
+4. **Install Torch-MLIR:**
+    ```bash
+    pip install --pre torch-mlir torchvision \
+    --extra-index-url https://download.pytorch.org/whl/nightly/cpu \
+    -f https://github.com/llvm/torch-mlir-release/releases/expanded_assets/dev-wheels
+    ```
 # Using The repository : 
 Check `./examples` folder: 
 1. In this project i used the `FX importer` since all the other importers are disabled for the time being
