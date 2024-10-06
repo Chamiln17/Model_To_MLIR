@@ -23,7 +23,7 @@ dummy_input = torch.randn(1, 3, 224, 224)  # Adjust size as needed
 module = fx.export_and_import(
     model,
     dummy_input,
-    output_type="linalg-on-tensors",
+    output_type="tosa",
     func_name=model.__class__.__name__,
 )
 

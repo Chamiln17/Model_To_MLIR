@@ -22,7 +22,7 @@ dummy_input = torch.randn(1, 1)  # Adjust size as needed
 module = fx.export_and_import(
     model,
     dummy_input,
-    output_type="tosa",
+    output_type="torch",
     func_name=model.__class__.__name__,
 )
 
