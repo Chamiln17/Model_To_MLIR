@@ -1,5 +1,5 @@
 # About Model_To_MLIR
-This project was developed in during my summer internship at the NYUAD University under the Supervision of Dr. Riyadh Baghdadi
+This project was developed during my summer internship at the NYUAD University under the Supervision of Dr. Riyadh Baghdadi
 ## Project Overview
 - **Project Name:** Model_To_MLIR
 - **Python Version:** 3.10.12
@@ -96,9 +96,15 @@ Depending on the model size, the generated MLIR file size will vary. For NLP mod
 <!--
 This section provides resources for further understanding of the concepts discussed in the README. It includes a link to the torch-mlir architecture documentation and a reference to the torch-mlir Discord channel within the LLVM project Discord server for community support.
 -->
-## Ressources
-1. For more in depth understanding of the concept, check the following readme file:
+## Resources
+1. For more in-depth understanding of the concept, check the following readme file:
 [touch-mlir architecture](https://github.com/llvm/torch-mlir/blob/main/docs/architecture.md)
-2. Refer to the [torch-mlir](https://discord.com/channels/636084430946959380/742573221882364009) discord channel in the LLVM project discord server, you will find a lot of helpful people over there  
-## Limitation Of the project :
-This project is intended to help you do the conversion from PyTorch to MLIR. Although it covers a significant portion of the conversion process, it is not perfect. You need to test the generated code using the `mlir-opt` command and fix any syntax error by yourself .
+2. Refer to the [torch-mlir](https://discord.com/channels/636084430946959380/742573221882364009) Discord channel in the LLVM project Discord server, you will find a lot of helpful people over there.
+
+## Limitation Of the project:
+This project is intended to help you do the conversion from PyTorch to MLIR. Although it covers a significant portion of the conversion process, it is not perfect. You need to test the generated code using the `mlir-opt` command and fix any syntax errors by yourself.
+
+#### Example of Usage
+```bash
+mlir-opt ./linear_regression_linalg.mlir
+```
